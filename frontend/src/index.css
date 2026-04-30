@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-darker text-white antialiased selection:bg-primary selection:text-white;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply bg-dark/50 backdrop-blur-md border border-white/10 rounded-2xl shadow-xl;
+  }
+  
+  .btn-primary {
+    @apply bg-gradient-to-r from-primary to-secondary text-white font-semibold py-2 px-6 rounded-lg shadow-lg hover:shadow-primary/50 transition-all duration-300 transform hover:-translate-y-1;
+  }
+}
